@@ -1,15 +1,17 @@
-import { useEffect, useState } from "react";
-import "./App.css";
-import Cats from "./components/Cats";
-import SubmitCats from "./components/SubmitCats";
+import React from "react";
+import CatsList from "./components/Cats";
+import TodosList from "./components/TODO";
 
-function App() {
+const MainView = () => {
   return (
-    <>
-      <Cats />
-      <SubmitCats />
-    </>
-  );
-}
+    <div>
+      <h2>Cats</h2>
+      <CatsList />
 
-export default App;
+      <h2>TODOs</h2>
+      <TodosList />
+    </div>
+  );
+};
+
+export default MainView;
